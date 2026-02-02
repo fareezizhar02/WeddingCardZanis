@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation Preview - Fareez & Zanis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', system-ui, sans-serif;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .animate-card {
+            animation: fadeInScale 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        
+        .animate-text-1 { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards; }
+        .animate-text-2 { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.45s backwards; }
+        .animate-text-3 { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.6s backwards; }
+        .animate-text-4 { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.75s backwards; }
+        .animate-text-5 { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.9s backwards; }
+        .animate-text-6 { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 1.05s backwards; }
+        
+        .btn-tap:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#faf5f0] via-[#fbf3e4]/50 to-[#f5f5f0] min-h-screen">
+    
+    <!-- Background overlay -->
+    <div class="fixed inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,239,231,0.8),transparent_50%),radial-gradient(circle_at_bottom_left,rgba(251,243,228,0.6),transparent_50%)] -z-10"></div>
+    
+    <!-- Main content -->
+    <main class="min-h-screen px-4 py-8 pb-28 sm:px-6 sm:py-12 sm:pb-32 md:px-8 md:py-16 flex items-center justify-center">
+        
+        <!-- Invitation Card -->
+        <div class="animate-card relative w-full max-w-2xl mx-auto bg-gradient-to-br from-[#faf5f0] to-[#fbf3e4]/30 rounded-2xl shadow-[0_8px_30px_rgba(139,92,46,0.12)] border border-[#f7eacc]/50 overflow-hidden">
+            
+            <!-- Subtle texture overlay -->
+            <div class="absolute inset-0 opacity-40 pointer-events-none" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAwaDE2djE2SDB6IiBmaWxsPSJub25lIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDMiLz48L3N2Zz4=');"></div>
+            
+            <!-- Card content -->
+            <div class="relative px-6 py-12 sm:px-10 sm:py-16 md:px-14 md:py-20">
+                <div class="space-y-8 text-center">
+                    
+                    <!-- Top Ornament -->
+                    <div class="animate-text-1 flex justify-center">
+                        <svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60 5 C55 15, 45 25, 35 30 C25 35, 15 35, 5 35 M60 5 C65 15, 75 25, 85 30 C95 35, 105 35, 115 35" stroke="#B8936E" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+                            <path d="M60 8 C58 18, 52 28, 45 33 C38 38, 30 40, 22 40 M60 8 C62 18, 68 28, 75 33 C82 38, 90 40, 98 40" stroke="#D4AF77" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+                            <circle cx="60" cy="5" r="2.5" fill="#B8936E" opacity="0.6"/>
+                            <circle cx="60" cy="5" r="1" fill="#F5EFE7"/>
+                            <circle cx="40" cy="28" r="1.5" fill="#D4AF77" opacity="0.4"/>
+                            <circle cx="80" cy="28" r="1.5" fill="#D4AF77" opacity="0.4"/>
+                            <circle cx="25" cy="35" r="1" fill="#B8936E" opacity="0.3"/>
+                            <circle cx="95" cy="35" r="1" fill="#B8936E" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Opening Text -->
+                    <p class="animate-text-2 text-sm tracking-[0.3em] uppercase text-[#8b5c2e]/70 font-light">The Wedding of</p>
+                    
+                    <!-- Couple Names -->
+                    <div class="animate-text-3 space-y-3">
+                        <h1 class="text-5xl md:text-6xl font-serif text-[#583a1e] tracking-tight" style="font-family: 'Cormorant Garamond', serif;">
+                            Fareez & Zanis
+                        </h1>
+                        <div class="flex items-center justify-center gap-3">
+                            <div class="h-px w-12 bg-gradient-to-r from-transparent to-[#8b5c2e]/30"></div>
+                            <span class="text-[#8b5c2e]/60 text-lg">♥</span>
+                            <div class="h-px w-12 bg-gradient-to-l from-transparent to-[#8b5c2e]/30"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Date & Time -->
+                    <div class="animate-text-4 space-y-2">
+                        <p class="text-2xl md:text-3xl font-serif text-[#714a26]" style="font-family: 'Cormorant Garamond', serif;">
+                            Saturday, June 15th, 2024
+                        </p>
+                        <p class="text-base text-[#8b5c2e]/80 tracking-wide">4:00 PM</p>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="animate-text-5 space-y-3 pt-2">
+                        <div class="space-y-1">
+                            <p class="text-lg font-serif text-[#714a26]" style="font-family: 'Cormorant Garamond', serif;">
+                                The Garden Pavilion
+                            </p>
+                            <p class="text-sm text-[#8b5c2e]/70 leading-relaxed">
+                                123 Rose Boulevard<br>
+                                Beverly Hills, CA 90210
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Reception Info -->
+                    <div class="animate-text-6 pt-4">
+                        <p class="text-sm text-[#8b5c2e]/60 italic">Reception to follow</p>
+                    </div>
+                    
+                    <!-- Bottom Ornament -->
+                    <div class="animate-text-6 flex justify-center pt-4">
+                        <svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-180">
+                            <path d="M60 5 C55 15, 45 25, 35 30 C25 35, 15 35, 5 35 M60 5 C65 15, 75 25, 85 30 C95 35, 105 35, 115 35" stroke="#B8936E" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+                            <path d="M60 8 C58 18, 52 28, 45 33 C38 38, 30 40, 22 40 M60 8 C62 18, 68 28, 75 33 C82 38, 90 40, 98 40" stroke="#D4AF77" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+                            <circle cx="60" cy="5" r="2.5" fill="#B8936E" opacity="0.6"/>
+                            <circle cx="60" cy="5" r="1" fill="#F5EFE7"/>
+                            <circle cx="40" cy="28" r="1.5" fill="#D4AF77" opacity="0.4"/>
+                            <circle cx="80" cy="28" r="1.5" fill="#D4AF77" opacity="0.4"/>
+                            <circle cx="25" cy="35" r="1" fill="#B8936E" opacity="0.3"/>
+                            <circle cx="95" cy="35" r="1" fill="#B8936E" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- RSVP Notice -->
+                    <p class="animate-text-6 text-xs tracking-widest uppercase text-[#8b5c2e]/50 pt-2">
+                        Kindly respond by May 1st
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Decorative corners -->
+            <div class="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-[#f7eacc]/40 rounded-tl-2xl"></div>
+            <div class="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-[#f7eacc]/40 rounded-br-2xl"></div>
+        </div>
+        
+    </main>
+    
+    <!-- Bottom App Bar -->
+    <div class="fixed bottom-0 left-0 right-0 h-16 sm:h-20 z-50">
+        <!-- Background with blur -->
+        <div class="absolute inset-0 bg-white/90 backdrop-blur-md border-t border-[#f7eacc]/50 shadow-[0_-4px_20px_rgba(139,92,46,0.08)] rounded-t-3xl"></div>
+        
+        <!-- Buttons -->
+        <div class="relative h-full max-w-7xl mx-auto px-2 sm:px-4 flex items-center justify-around gap-1 sm:gap-2">
+            
+            <!-- Hubungi Button -->
+            <button class="btn-tap flex flex-col items-center justify-center gap-1 flex-1 max-w-[120px] py-2 px-3 rounded-xl transition-all duration-200 hover:bg-[#fbf3e4] active:bg-[#f7eacc] focus:outline-none focus:ring-2 focus:ring-[#d4af77]/50 focus:ring-offset-2" onclick="alert('Contact feature - to be implemented')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#714a26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span class="text-[10px] sm:text-xs font-medium text-[#714a26] tracking-wide uppercase">Hubungi</span>
+            </button>
+            
+            <!-- RSVP Button -->
+            <button class="btn-tap flex flex-col items-center justify-center gap-1 flex-1 max-w-[120px] py-2 px-3 rounded-xl transition-all duration-200 hover:bg-[#fbf3e4] active:bg-[#f7eacc] focus:outline-none focus:ring-2 focus:ring-[#d4af77]/50 focus:ring-offset-2" onclick="alert('RSVP feature - to be implemented')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#714a26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span class="text-[10px] sm:text-xs font-medium text-[#714a26] tracking-wide uppercase">RSVP</span>
+            </button>
+            
+            <!-- Kalendar Button -->
+            <button class="btn-tap flex flex-col items-center justify-center gap-1 flex-1 max-w-[120px] py-2 px-3 rounded-xl transition-all duration-200 hover:bg-[#fbf3e4] active:bg-[#f7eacc] focus:outline-none focus:ring-2 focus:ring-[#d4af77]/50 focus:ring-offset-2" onclick="alert('Calendar feature - to be implemented')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#714a26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                <span class="text-[10px] sm:text-xs font-medium text-[#714a26] tracking-wide uppercase">Kalendar</span>
+            </button>
+            
+            <!-- Lokasi Button -->
+            <button class="btn-tap flex flex-col items-center justify-center gap-1 flex-1 max-w-[120px] py-2 px-3 rounded-xl transition-all duration-200 hover:bg-[#fbf3e4] active:bg-[#f7eacc] focus:outline-none focus:ring-2 focus:ring-[#d4af77]/50 focus:ring-offset-2" onclick="alert('Location feature - to be implemented')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#714a26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span class="text-[10px] sm:text-xs font-medium text-[#714a26] tracking-wide uppercase">Lokasi</span>
+            </button>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

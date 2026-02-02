@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Custom cream and amber color palette for wedding theme */
+    --cream-50: 250 245 240;
+    --cream-100: 245 239 231;
+    --cream-200: 239 230 218;
+    
+    --amber-50: 251 243 228;
+    --amber-100: 247 234 208;
+    --amber-200: 242 221 183;
+    --amber-700: 139 92 46;
+    --amber-800: 113 74 38;
+    --amber-900: 88 58 30;
+  }
+
+  /* ✅ Ensure proper scrolling on mobile */
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+    /* ✅ iOS smooth scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* ✅ Force scroll calculation */
+    overflow-y: scroll;
+    height: auto;
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-cream-100 text-amber-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* ✅ Ensure body can scroll on mobile */
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Chrome, Edge, Safari */
+  html::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  /* REMOVE arrows completely */
+  html::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  /* For elements with scroll-minimal class */
+  .scroll-minimal::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scroll-minimal::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scroll-minimal::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  .scroll-minimal::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair), serif;
+  }
+
+  .font-greatvibes {
+    font-family: var(--font-greatvibes), cursive;
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
