@@ -37,22 +37,22 @@ const greatVibes = Great_Vibes({
 })
 
 export const metadata: Metadata = {
-  title: 'Fareez & Zanis – Wedding Invitation',
+  title: 'Syafinatul & Fareez – Wedding Invitation',
   description:
-    'Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan Fareez & Zanis.',
+    'Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan Syafinatul & Fareez.',
 
   openGraph: {
-    title: 'Jemputan Perkahwinan Fareez & Zanis',
+    title: 'Jemputan Perkahwinan Syafinatul & Fareez',
       description:
-        'Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan Fareez & Zanis',
-    url: 'https://lakar-fareezanis.vercel.app',
-    siteName: 'Walimatulurus Fareez & Zanis',
+        'Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan Syafinatul & Fareez',
+    url: 'https://lakar-syafinatulfareez.vercel.app',
+    siteName: 'Walimatulurus Syafinatul & Fareez',
     images: [
       {
-        url: 'https://lakar-fareezanis.vercel.app/images/thumbnail.png',
+        url: 'https://lakar-syafinatulfareez.vercel.app/images/thumbnail_zanis.png',
         width: 1200,
         height: 630,
-        alt: 'Jemputan Perkahwinan Fareez & Zanis',
+        alt: 'Jemputan Perkahwinan Syafinatul & Fareez',
       },
     ],
     locale: 'en_US',
@@ -61,10 +61,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Jemputan Perkahwinan Fareez & Zanis',
+    title: 'Jemputan Perkahwinan Syafinatul & Fareez',
     description:
-      'Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan Fareez & Zanis.',
-    images: ['https://lakar-fareezanis.vercel.app/images/thumbnail.png'],
+      'Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan Syafinatul & Fareez.',
+    images: ['https://lakar-syafinatulfareez.vercel.app/images/thumbnail_zanis.png'],
   },
 };
 

@@ -10,9 +10,9 @@ interface LocationSheetProps {
 
 export default function LocationSheet({ isOpen, onClose }: LocationSheetProps) {
   const title = 'Lokasi'
-  const address = `No. 6, Jalan Tasik Senangin 12/2,
-Seksyen 12, Bandar Tasik Senangin,
-71750 Lenggeng, Negeri Sembilan.`
+  const address = `Lot 8, Kampung Baru Pulau Sayak,
+08500 Kota Kuala Muda,
+Kedah`
 
   const WAZE_URL = 'https://waze.com/ul/hw1p25kcg1'
   const GMAPS_URL = 'https://maps.app.goo.gl/Ugw3eNvG3oc4kKyn9?g_st=iw'

@@ -198,7 +198,7 @@ const onTouchMove = (e: TouchEvent) => {
 
     if (audioRef.current) {
       try {
-        audioRef.current.currentTime = 138;
+        audioRef.current.currentTime = 74; // Music start from 1:14
         await audioRef.current.play();
         setIsPlaying(true);
       } catch (error) {
@@ -233,7 +233,7 @@ const onTouchMove = (e: TouchEvent) => {
   return (
     <div className="relative w-full overflow-x-hidden isolate">
       <audio ref={audioRef} loop preload="auto">
-        <source src="/music/MusicBackground.mp3" type="audio/mpeg" />
+        <source src="/music/Akad.mp3" type="audio/mpeg" />
       </audio>
 
       <AnimatePresence>

@@ -108,7 +108,7 @@ export default function MusicPlayer({ audioRef, isPlaying, onPlayPause }: MusicP
               "
             >
               <Image
-                src="/images/Izanis.jpeg"
+                src="/images/Izanis1.jpg"
                 alt="Album Cover"
                 fill
                 className="object-cover"
@@ -147,10 +147,10 @@ export default function MusicPlayer({ audioRef, isPlaying, onPlayPause }: MusicP
           Sedang Dimainkan
         </p>
         <h3 className="font-playfair text-[20px] sm:text-[22px] text-stone-700">
-          Kota Ini Tak Sama Tanpamu
+          Akad
         </h3>
         <p className="font-montserrat text-[12px] tracking-wide text-stone-500">
-          Nadhif Basalamah, Aziz Harun & Aishah Retno
+          Payung Teduh
         </p>
       </div>
 
