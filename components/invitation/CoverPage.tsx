@@ -24,7 +24,7 @@ export default function CoverPage() {
 
       {/* Center Content */}
       <div className="relative z-10 h-full w-full flex items-start justify-center px-6 pt-[30vh] min-[375px]:pt-[30vh] min-[390px]:pt-[30vh] sm:pt-[18vh]">
-        <div className="w-full max-w-[420px] sm:max-w-[520px] flex flex-col items-center text-center">
+        <div className="w-full max-w-[420px] sm:max-w-[520px] flex flex-col items-center text-center px-4">
           {/* WALIMATULURUS */}
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
