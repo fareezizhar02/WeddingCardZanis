@@ -7,7 +7,7 @@ export default function CoverPage() {
   return (
     <div className="relative h-full w-full overflow-visible">
       {/* Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/images/cp2.png"
           alt="Wedding Background"
