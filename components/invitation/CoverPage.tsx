@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function CoverPage() {
   return (
-    <div className="relative h-full w-full overflow-hidden">
+    <div className="relative h-full w-full overflow-visible">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
@@ -52,7 +52,7 @@ export default function CoverPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.35 }}
-              className="font-greatvibes leading-[0.9] text-stone-700 min-[390px]:text-[88px] px-2"
+              className="font-greatvibes leading-[0.9] text-stone-700 min-[390px]:text-[88px]"
               style={{
                 fontSize: "clamp(60px, 14vw, 82px)", // base <390px
               }}
