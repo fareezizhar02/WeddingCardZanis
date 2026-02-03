@@ -2,25 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Playfair_Display, Great_Vibes, Montserrat } from "next/font/google";
-
-const playfair = Playfair_Display({
-  weight: ["400", "600"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const greatVibes = Great_Vibes({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const montserrat = Montserrat({
-  weight: ["400", "500", "600"],
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export default function CoverPage() {
   return (
@@ -53,7 +34,7 @@ export default function CoverPage() {
               duration: 0.6,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className={`${playfair.className} uppercase tracking-[0.3em] text-stone-700 font-semibold min-[390px]:text-[21px]`}
+            className="font-playfair uppercase tracking-[0.3em] text-stone-700 font-semibold min-[390px]:text-[21px]"
             style={{
               marginBottom: "clamp(18px, 4.5vw, 32px)",
             }}
@@ -71,9 +52,9 @@ export default function CoverPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.35 }}
-              className={`${greatVibes.className} leading-[0.9] text-stone-700 min-[390px]:text-[88px]`}
+              className="font-greatvibes leading-[0.9] text-stone-700 min-[390px]:text-[88px]"
               style={{
-                fontSize: "clamp(60px, 14vw, 82px)", // ✅ BASE untuk <390px (375 pun okay)
+                fontSize: "clamp(60px, 14vw, 82px)", // base <390px
               }}
             >
               <motion.span
@@ -94,7 +75,7 @@ export default function CoverPage() {
                 duration: 0.5,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className={`${montserrat.className} font-medium tracking-widest text-stone-700 min-[390px]:text-[30px]`}
+              className="font-montserrat font-medium tracking-widest text-stone-700 min-[390px]:text-[30px]"
               style={{
                 fontSize: "clamp(22px, 5.5vw, 28px)",
                 marginTop: "clamp(6px, 1.6vw, 10px)",
@@ -109,9 +90,9 @@ export default function CoverPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 2.6, duration: 0.35 }}
-              className={`${greatVibes.className} leading-[0.9] text-stone-700 min-[390px]:text-[88px]`}
+              className="font-greatvibes leading-[0.9] text-stone-700 min-[390px]:text-[88px]"
               style={{
-                fontSize: "clamp(60px, 14vw, 82px)", // ✅ BASE untuk <390px (375 pun okay)
+                fontSize: "clamp(60px, 14vw, 82px)", // base <390px
               }}
             >
               <motion.span
@@ -124,7 +105,7 @@ export default function CoverPage() {
             </motion.h1>
           </div>
 
-          {/* Date (single line) */}
+          {/* Date */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -133,7 +114,7 @@ export default function CoverPage() {
               duration: 0.65,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className={`${montserrat.className} text-stone-700 font-medium tracking-[0.22em] uppercase min-[390px]:text-[15px]`}
+            className="font-montserrat text-stone-700 font-medium tracking-[0.22em] uppercase min-[390px]:text-[15px]"
           >
             28 Mac 2026
           </motion.div>
@@ -143,15 +124,15 @@ export default function CoverPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 4.9, // masuk lepas Date settle
+              delay: 4.9,
               duration: 0.6,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className={`${greatVibes.className} text-stone-600 min-[390px]:text-[24px]`}
-  style={{
-    fontSize: 'clamp(17px, 4.5vw, 21px)', // base <390
-    marginTop: 'clamp(14px, 3.5vw, 22px)',
-  }}
+            className="font-greatvibes text-stone-600 min-[390px]:text-[24px]"
+            style={{
+              fontSize: "clamp(17px, 4.5vw, 21px)",
+              marginTop: "clamp(14px, 3.5vw, 22px)",
+            }}
           >
             #SatuSyafDibelakangFareez
           </motion.p>
