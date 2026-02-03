@@ -23,7 +23,9 @@ export default function CoverPage() {
       </div>
 
       {/* Center Content */}
-      <div className="relative z-10 h-full w-full flex items-start justify-center px-6 pt-[30vh] min-[375px]:pt-[30vh] min-[390px]:pt-[30vh] sm:pt-[18vh]">
+      <div
+        className="relative z-10 h-full w-full flex items-start justify-center px-6 pt-[30vh] min-[375px]:pt-[30vh] min-[390px]:pt-[30vh] sm:pt-[18vh]"
+      >
         <div className="w-full max-w-[420px] sm:max-w-[520px] flex flex-col items-center text-center px-4">
           {/* WALIMATULURUS */}
           <motion.h2
@@ -58,12 +60,13 @@ export default function CoverPage() {
               }}
             >
               <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8, duration: 1.4, ease: "easeInOut" }}
-              >
-                Syafinatul
-              </motion.span>
+  className="inline-block pr-[0.12em]"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.8, duration: 1.4, ease: "easeInOut" }}
+>
+  Syafinatul
+</motion.span>
             </motion.h1>
 
             {/* & */}
